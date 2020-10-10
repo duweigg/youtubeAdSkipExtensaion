@@ -1,0 +1,19 @@
+  {
+    "name": "YoutubeADSkip",
+    "version": "1.0",
+    "description": "Skip youtube advertisement",
+    "permissions": ["activeTab", "declarativeContent", "storage",  "*://*.youtube.com/watch?v=*"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/watch?v=*"],
+        "js": ["autoSkipAd.js"]
+      }
+    ],
+    "icons": {
+      "16": "images/youtube16.png",
+      "32": "images/youtube32.png",
+      "48": "images/youtube48.png",
+      "128": "images/youtube128.png"
+    },
+    "manifest_version": 2
+  }
