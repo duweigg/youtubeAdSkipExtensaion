@@ -1,8 +1,8 @@
   {
-    "name": "YoutubeADSkip",
+    "name": "Youtube Ad Skip",
     "version": "1.0",
     "description": "Skip youtube advertisement",
-    "permissions": ["activeTab", "declarativeContent", "storage",  "*://*.youtube.com/watch?v=*"],
+    "permissions": ["*://*.youtube.com/watch?v=*"],
     "content_scripts": [
       {
         "matches": ["*://*.youtube.com/watch?v=*"],
